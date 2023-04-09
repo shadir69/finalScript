@@ -159,7 +159,7 @@
                                     }, 5000);
                               }else{
                                   message.style.color='#fff';
-                                message.innerHTML=`<p>There is No Risk</p> ${boxGreenSvg} .`;
+                                message.innerHTML=`There is No Risk ${boxGreenSvg} .`;
                                 view.appendChild(message);
                               }
                             }else{
