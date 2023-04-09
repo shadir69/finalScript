@@ -143,8 +143,7 @@
                                 view.style.alignItems='center';
   
                             if(successTest==data.length || retry_after!=0 ){
-                                 let message= document.createElement('span');
-                                console.log(retry_after);
+                                 let message= document.createElement('span');                          
                               if(retry_after!=0){
                                message.innerText='Try after 1 minute...!';
                                   message.style.color='red';
