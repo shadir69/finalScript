@@ -464,7 +464,7 @@
         }
       }
       if (itemsData.length) {
-        const trimNumber = Math.ceil(data.length / 100);
+        const trimNumber = Math.ceil(itemsData.length / 100);
         for (let i = 0; i < trimNumber; i++) {
           let start = i * 100;
           let end = start + 100;
