@@ -130,7 +130,7 @@
                                     successTest++;
                                 }
                             }
-                             closeSpinner()
+                         //    closeSpinner()
                             td.removeChild(buttonContainer);
                             td.appendChild(view);
                                 view.style.background="#444857";
