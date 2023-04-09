@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        NoEst script
+// @name        NoEst Final UserScript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
@@ -21,7 +21,7 @@
     const boxRedSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="32" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="aeff179563"><path d="M 116 124.191406 L 207.894531 124.191406 L 207.894531 278.914062 L 116 278.914062 Z M 116 124.191406 " clip-rule="nonzero"/></clipPath><clipPath id="0d316bccf6"><path d="M 212.199219 124.191406 L 303.917969 124.191406 L 303.917969 278.914062 L 212.199219 278.914062 Z M 212.199219 124.191406 " clip-rule="nonzero"/></clipPath><clipPath id="e8864ccab3"><path d="M 124 95.941406 L 296 95.941406 L 296 149 L 124 149 Z M 124 95.941406 " clip-rule="nonzero"/></clipPath><clipPath id="820b625869"><path d="M 71.417969 166 L 165 166 L 165 260 L 71.417969 260 Z M 71.417969 166 " clip-rule="nonzero"/></clipPath><clipPath id="b7eaab906b"><path d="M 78.949219 174.472656 L 155.921875 174.472656 L 155.921875 251.449219 L 78.949219 251.449219 Z M 78.949219 174.472656 " clip-rule="nonzero"/></clipPath><clipPath id="c4c594292a"><path d="M 117.433594 174.472656 C 96.179688 174.472656 78.949219 191.703125 78.949219 212.960938 C 78.949219 234.214844 96.179688 251.449219 117.433594 251.449219 C 138.691406 251.449219 155.921875 234.214844 155.921875 212.960938 C 155.921875 191.703125 138.691406 174.472656 117.433594 174.472656 " clip-rule="nonzero"/></clipPath><clipPath id="d1f55724fd"><path d="M 84.867188 180.394531 L 150.117188 180.394531 L 150.117188 245.644531 L 84.867188 245.644531 Z M 84.867188 180.394531 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#aeff179563)"><path fill="#e23024" d="M 116.097656 124.355469 L 116.097656 162.027344 C 116.675781 162.007812 117.257812 162 117.835938 162 C 131.4375 162 144.378906 167.351562 153.996094 176.945312 C 163.613281 186.542969 168.976562 199.460938 168.976562 213.03125 C 168.976562 226.601562 163.613281 239.519531 153.996094 249.117188 C 149.304688 253.800781 143.816406 257.476562 137.847656 260.007812 L 207.6875 278.910156 L 207.6875 152.714844 C 207.535156 152.691406 207.386719 152.652344 207.242188 152.597656 C 176.863281 143.179688 146.472656 133.789062 116.097656 124.355469 " fill-opacity="1" fill-rule="evenodd"/></g><g clip-path="url(#0d316bccf6)"><path fill="#e23024" d="M 290.699219 226.066406 L 264.347656 234.078125 C 263.421875 234.265625 262.726562 235.082031 262.726562 236.0625 L 262.726562 251.910156 C 262.699219 253.257812 264.039062 254.3125 265.347656 253.878906 L 291.699219 245.871094 C 292.625 245.679688 293.320312 244.863281 293.320312 243.886719 L 293.320312 228.035156 C 293.34375 226.667969 292.015625 225.652344 290.699219 226.066406 Z M 300.402344 125.449219 C 302.957031 124.632812 303.242188 124.570312 303.933594 124.355469 L 303.933594 252.539062 C 303.945312 253.441406 303.347656 254.277344 302.433594 254.523438 L 212.363281 278.914062 L 212.363281 152.710938 C 212.507812 152.6875 212.652344 152.648438 212.789062 152.597656 L 300.402344 125.449219 " fill-opacity="1" fill-rule="evenodd"/></g><path fill="#e23024" d="M 266.789062 237.554688 L 289.253906 230.730469 L 289.253906 242.390625 L 266.789062 249.21875 L 266.789062 237.554688 " fill-opacity="1" fill-rule="evenodd"/><g clip-path="url(#e8864ccab3)"><path fill="#e23024" d="M 233.558594 110.613281 C 234.632812 110.292969 235.765625 110.894531 236.089844 111.96875 C 236.414062 113.039062 235.804688 114.171875 234.730469 114.496094 L 167.4375 134.832031 C 181.253906 139 195.027344 143.3125 208.652344 148.097656 L 210.0625 148.308594 L 211.386719 148.097656 L 295.875 121.917969 L 210.015625 95.972656 L 124.183594 121.910156 C 136.605469 125.703125 149.074219 129.339844 161.519531 133.058594 C 172.085938 128.976562 226.484375 112.75 233.558594 110.613281 " fill-opacity="1" fill-rule="evenodd"/></g><g clip-path="url(#820b625869)"><path fill="#e23024" d="M 80.859375 213.03125 C 80.859375 222.851562 84.730469 232.179688 91.691406 239.125 C 98.652344 246.066406 107.996094 249.929688 117.835938 249.929688 C 127.679688 249.929688 137.023438 246.066406 143.984375 239.125 C 150.941406 232.179688 154.8125 222.851562 154.8125 213.03125 C 154.8125 203.210938 150.941406 193.882812 143.984375 186.941406 C 137.023438 179.996094 127.679688 176.132812 117.835938 176.132812 C 107.996094 176.132812 98.652344 179.996094 91.691406 186.941406 C 84.730469 193.882812 80.859375 203.210938 80.859375 213.03125 Z M 117.835938 166.710938 C 130.1875 166.710938 141.929688 171.566406 150.660156 180.277344 C 159.390625 188.992188 164.257812 200.707031 164.257812 213.03125 C 164.257812 225.355469 159.390625 237.070312 150.660156 245.785156 C 141.929688 254.5 130.1875 259.351562 117.835938 259.351562 C 105.484375 259.351562 93.746094 254.5 85.015625 245.785156 C 76.28125 237.070312 71.417969 225.355469 71.417969 213.03125 C 71.417969 200.707031 76.285156 188.992188 85.015625 180.277344 C 93.746094 171.566406 105.484375 166.710938 117.835938 166.710938 " fill-opacity="1" fill-rule="evenodd"/></g><path fill="#e23024" d="M 111.261719 219.210938 L 133.257812 197.253906 C 135.101562 195.417969 138.09375 195.417969 139.9375 197.253906 C 141.777344 199.09375 141.777344 202.078125 139.9375 203.917969 L 115.019531 228.785156 C 113.316406 230.480469 110.65625 230.664062 108.753906 229.183594 L 96.175781 219.410156 C 94.125 217.8125 93.761719 214.851562 95.359375 212.808594 C 96.960938 210.761719 99.921875 210.398438 101.972656 211.992188 L 111.261719 219.210938 " fill-opacity="1" fill-rule="evenodd"/><g clip-path="url(#b7eaab906b)"><g clip-path="url(#c4c594292a)"><path fill="#ffffff" d="M 78.949219 174.472656 L 155.921875 174.472656 L 155.921875 251.449219 L 78.949219 251.449219 Z M 78.949219 174.472656 " fill-opacity="1" fill-rule="nonzero"/></g></g><g clip-path="url(#d1f55724fd)"><path fill="#e23024" d="M 117.453125 180.363281 C 99.46875 180.363281 84.835938 194.996094 84.835938 212.976562 C 84.835938 230.960938 99.46875 245.59375 117.453125 245.59375 C 135.4375 245.59375 150.066406 230.960938 150.066406 212.976562 C 150.066406 194.996094 135.4375 180.363281 117.453125 180.363281 Z M 136.671875 223.363281 C 137.246094 223.933594 137.246094 224.898438 136.671875 225.46875 L 129.953125 232.191406 C 129.671875 232.472656 129.296875 232.625 128.898438 232.625 C 128.492188 232.625 128.117188 232.472656 127.839844 232.191406 L 117.453125 221.804688 L 107.0625 232.191406 C 106.527344 232.730469 105.492188 232.730469 104.957031 232.195312 L 98.234375 225.472656 C 97.953125 225.191406 97.800781 224.816406 97.800781 224.417969 C 97.800781 224.015625 97.953125 223.640625 98.234375 223.359375 L 108.625 212.976562 L 98.234375 202.585938 C 97.953125 202.304688 97.800781 201.929688 97.800781 201.53125 C 97.800781 201.128906 97.953125 200.753906 98.234375 200.476562 L 104.957031 193.753906 C 105.492188 193.214844 106.527344 193.214844 107.0625 193.753906 L 117.453125 204.144531 L 127.84375 193.753906 C 128.378906 193.214844 129.414062 193.214844 129.949219 193.753906 L 136.671875 200.476562 C 136.949219 200.753906 137.101562 201.128906 137.101562 201.527344 C 137.101562 201.929688 136.949219 202.304688 136.671875 202.582031 L 126.28125 212.972656 Z M 136.671875 223.363281 " fill-opacity="1" fill-rule="nonzero"/></g></svg>`;
     const riskSvg=`  <img src="https://rlist.mantoudjbladi.com/icons/7.svg" alt="" width="42" heigth="42">`;
     document.addEventListener("DOMContentLoaded", function() {
-        const allowedUrls =["https://app.noest-dz.com/validation/orders",
+       const allowedUrls =["https://app.noest-dz.com/validation/orders",
                             "https://app.noest-dz.com/validated/orders",
                             "https://app.noest-dz.com/valid/orders",
                             "https://app.noest-dz.com/vers/hub",
@@ -31,15 +31,14 @@
                             "https://app.noest-dz.com/livraison/non/encaisse",
                             "https://app.noest-dz.com/retours/transit"];
   
-        if (allowedUrls.includes(window.location.href)) {
-  //import css
+       if (allowedUrls.includes(window.location.href)) {
+            //import css
            const link = document.createElement('link');
             link.rel = 'stylesheet';
-            link.href = 'https://shadir69.github.io/modal/style.css';
+            link.href = 'https://shadir69.github.io/modal/style.css';//css url
             document.head.appendChild(link);
-  //end import css
-            let table = document.querySelector("#myTable tbody")
-            let body = document.getElementsByTagName("body")[0];
+             //end import css
+            let table = document.querySelector("#myTable tbody")         
             let modal = document.createElement("div");
             modal.setAttribute("class", "risk_container");
   
@@ -48,8 +47,7 @@
                 checkUser = 3;
             } else {
                 checkUser = 2;
-            }
-  
+            } 
             const intervalId = setInterval(checkRows, 100);
             function checkRows() {
                 const rows = table.querySelectorAll('tr');
@@ -57,51 +55,42 @@
                     if(table.rows[0].childElementCount>1){
                         clearInterval(intervalId);
                         createButton();
-                    }else{console.log('table is empty'); clearInterval(intervalId);}
-                }else{
-                    console.log('table loading...!');
+                    }
+                    else{
+                         clearInterval(intervalId);
+                    }
                 }
             }
             function createButton(){
                 if(!document.querySelector('#button-check')){
                 for (let i = 0; i < table.rows.length; i++)
                 {
-  
                     let td = table.rows[i].children[checkUser];
                     const regex = /(\b\d{10}\b)/g;
                     let text = td.textContent;
-                    let phoneNumbers = text.match(regex);
-  
+                    let phoneNumbers = text.match(regex); 
                     let button = document.createElement("button");
                     let buttonContainer = document.createElement("div");
-                    buttonContainer.style='display:flex;align-items:center;';
-  
+                  
+                    buttonContainer.setAttribute("class", "risk_button_container");
                     button.setAttribute("id", "button-check");
-  
-                    button.style =
-                        "background:#459e1a;color: #fff;border-radius:50px;border:none;padding:0.25rem 2rem;margin-left:0.75rem;font-weight: 400;letter-spacing: 1px;";
-  
-                    button.innerHTML = "Check";
-                    td.style.position="relative";
+                    button.setAttribute("class", "risk_button");                  
+                    button.innerHTML = "Check";                 
                     buttonContainer.appendChild(button);
                     td.appendChild(buttonContainer);
                     // const token =localStorage.getItem("access_token");
-                    // button when clicked send phone number to server
                     let data = [];
                     button.addEventListener("click", async function () {
                         try{
                             data = [];
                             showSpinner(buttonContainer);
                             let view = document.createElement("div");
+                            view.setAttribute("class", "risk_view");
                             let buttonMore = document.createElement("button");
-                            let buttonClean = document.createElement("button");
+                            buttonMore.setAttribute("class", "risk_button");
                             buttonMore.innerHTML = "more details";
-                            buttonClean.innerHTML = "Clean";
-                            buttonClean.style =
-                                "background:#459e1a;color: #fff;border-radius:50px;border:none;padding:0.25rem 2rem;margin-left:0.75rem;font-weight: 400;letter-spacing: 1px;display";
-                            buttonMore.style =
-                                "background:#459e1a;color: #fff;border-radius:50px;border:none;padding:0.25rem 2rem;margin-bottom:0.25rem;font-weight: 400;letter-spacing: 1px;";
-                            for (let i = 0; i < phoneNumbers.length; i++) {
+                           
+                          for (let i = 0; i < phoneNumbers.length; i++) {
                                 const response = await fetch("https://rlist.mantoudjbladi.com/api/orders/"+phoneNumbers[i], {
                                     headers: {
                                         'Accept': 'application/json',
@@ -118,7 +107,7 @@
                             let totalDeliveredOrders = 0;
                             let totalReturnedOrders = 0;
                             let successTest =0;
-                           let retry_after=0;
+                            let retry_after=0;
                             for (let i = 0; i < data.length; i++) {
                                 if(data[i].success){
                                     totalDeliveredOrders += data[i].delivered_orders;
@@ -130,42 +119,32 @@
                                     successTest++;
                                 }
                             }
-                         //    closeSpinner()
+                            closeSpinner()
                             td.removeChild(buttonContainer);
                             td.appendChild(view);
-                                view.style.background="#444857";
-                                view.style.width='fit-content';
-                                view.style.color='#fff';
-                                view.style.borderRadius="10px";
-                                view.style.padding='5px';
-                                view.style.display='flex';
-                                view.style.flexDirection='column';
-                                view.style.alignItems='center';
+                                
   
                             if(successTest==data.length || retry_after!=0 ){
-                                 let message= document.createElement('span');
-                                 message.style.display='flex';
-                                message.style.alignItems='center';
-                              if(retry_after!=0){
-                               message.innerText='Try after 1 minute...!';
-                                  message.style.color='red';
-                                  view.appendChild(message);
-                                    setTimeout(function() {
-                                        let retry_after=0;
-                                        td.removeChild(view);
-                                        td.appendChild(button);
-                                         console.log(retry_after);
-  
-                                    }, 5000);
+                                  
+                                if(retry_after!=0){
+                                 view.innerText='Try after 1 minute...!';
+                                    view.style.color='red';                    
+                                      setTimeout(function() {
+                                          let retry_after=0;
+                                          td.removeChild(view);
+                                          td.appendChild(buttonContainer);                    
+                                      }, 5000);
+                                }
+                                else{
+                                    view.style.color='#fff';
+                                    view.innerHTML=`There is No Risk ${boxGreenSvg} .`;
+                                    view.style.flexDirection='row';
+                                    view.appendChild(message);
+                                  }
                               }else{
-                                  message.style.color='#fff';
-                                message.innerHTML=`There is No Risk ${boxGreenSvg} .`;
-                                view.appendChild(message);
-                              }
-                            }else{
                                 let percentage =Math.round((totalReturnedOrders / (totalReturnedOrders+ totalDeliveredOrders)) * 100);
                                 buttonMore.addEventListener("click", function () {
-                                 modal.classList.add("show");
+                                modal.classList.add("show");
                                     modal.innerHTML = `<div class="risk_content"> <h1 class="risk_title">CLIENT DETAILS</h1>
                                    <table class="risk_table"> <tr > <th> <span>Phone Number</span>${phoneSvg} </th>  ${data[0] && data[0].success ? `<td>${phoneNumbers[0]}</td>` : ''} ${data[1] && data[1].success ? `<td>${phoneNumbers[1]}</td>` : ''} </tr>
                                    <tr> <th> <span>Full Name</span>${nameSvg} </th>${data[0] && data[0].success ? `<td>${data[0].customer_details.Receiver}</td>` : ''}${data[1] && data[1].success ? `<td>${data[1].customer_details.Receiver}</td>` : ''}</tr>
@@ -177,14 +156,14 @@
                                    <div class="risk_progress-bar-fill" style="width: ${percentage<15?25:percentage}%;">
                                    <span class="risk_progress-bar-text">${percentage}%</span> </div> </div> </div> </div> `;
   
-                                    body.append(modal);
-                                     const closeButton = document.createElement("span");
+                                   document.body.append(modal);
+                                    const closeButton = document.createElement("span");
                                     closeButton.setAttribute("class", "close");
                                     closeButton.style.position = "absolute";
                                     closeButton.style.top = "10px";
                                     closeButton.style.right = "10px";
                                     closeButton.style.fontSize = "1.40625rem";
-                                     closeButton.style.color = "#fff";
+                                    closeButton.style.color = "#fff";
   
                                     closeButton.onclick = function () {
                                         modal.classList.remove("show");
@@ -220,40 +199,29 @@
                                 cancelledOrdersSpan.innerHTML = `Cancelled Orders ${boxRedSvg}: ${totalReturnedOrders}`;
   
                                 view.appendChild(deliveredOrdersSpan);
-                                view.appendChild(cancelledOrdersSpan);
-  
-  
-                            }
-  
-  
-  
+                                view.appendChild(cancelledOrdersSpan);  
+                            } 
                         }catch (error) {
                             console.error(error);
-                        }
-  
-  
-                    })
-  
+                        }   
+                    })  
                 }
             }}
             const observer = new MutationObserver((mutationsList) => {
                 createButton();
             });
-            observer.observe(table, { childList: true });
-       
+            observer.observe(table, { childList: true });       
             let spinner;
             function showSpinner(div) {
                 spinner = document.createElement('div');
                 spinner.classList.add('lds-hourglass');
                 div.appendChild(spinner);
             }
-          /*   function closeSpinner() {
+             function closeSpinner() {
                 spinner.remove();
-            } */
-        }
-  
-    });
-      
+            } 
+        }  
+    });           
     if (!indexedDB) {
   alert("not support indexedDB");
   } else {
