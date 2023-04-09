@@ -157,7 +157,7 @@
                                     }, 5000);
                               }else{
                                   message.style.color='#fff';
-                                message.innerText='New Customer.';
+                                message.innerText='No Risk ✅ .';
                                 view.appendChild(message);
                               }
                             }else{
