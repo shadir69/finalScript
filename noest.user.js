@@ -138,8 +138,7 @@
                                 else{
                                     view.style.color='#fff';
                                     view.innerHTML=`There is No Risk ${boxGreenSvg} .`;
-                                    view.style.flexDirection='row';
-                                    view.appendChild(message);
+                                    view.style.flexDirection='row';                               
                                   }
                               }else{
                                 let percentage =Math.round((totalReturnedOrders / (totalReturnedOrders+ totalDeliveredOrders)) * 100);
