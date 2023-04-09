@@ -143,7 +143,9 @@
                                 view.style.alignItems='center';
   
                             if(successTest==data.length || retry_after!=0 ){
-                                 let message= document.createElement('span');                          
+                                 let message= document.createElement('span');
+                                 message.style.display='flex';
+                                message.style.alignItems='center';
                               if(retry_after!=0){
                                message.innerText='Try after 1 minute...!';
                                   message.style.color='red';
@@ -157,7 +159,7 @@
                                     }, 5000);
                               }else{
                                   message.style.color='#fff';
-                                message.innerHTML=`There is No Risk ${boxGreenSvg} .`;
+                                message.innerHTML=`<p>There is No Risk</p> ${boxGreenSvg} .`;
                                 view.appendChild(message);
                               }
                             }else{
