@@ -157,7 +157,7 @@
                                     }, 5000);
                               }else{
                                   message.style.color='#fff';
-                                message.innerText='No Risk ✅ .';
+                                message.innerText='There is No Risk ✅ .';
                                 view.appendChild(message);
                               }
                             }else{
