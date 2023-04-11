@@ -5,7 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match       https://app.noest-dz.com/*
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @icon  https://file.riskblacklist.com/imgs/RiskBlackList.gif
 // @grant        none
 // @run-at document-start
 
@@ -13,7 +13,7 @@
 
 (function() {
   'use strict';
-
+const googleSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="48px" height="48px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,256v-256h256v256z" id="bgRectangle"></path></g><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M43.611,20.083h-1.611v-0.083h-18v8h11.303c-1.649,4.657 -6.08,8 -11.303,8c-6.627,0 -12,-5.373 -12,-12c0,-6.627 5.373,-12 12,-12c3.059,0 5.842,1.154 7.961,3.039l5.657,-5.657c-3.572,-3.329 -8.35,-5.382 -13.618,-5.382c-11.045,0 -20,8.955 -20,20c0,11.045 8.955,20 20,20c11.045,0 20,-8.955 20,-20c0,-1.341 -0.138,-2.65 -0.389,-3.917z" fill="#ffc107"></path><path d="M6.306,14.691l6.571,4.819c1.778,-4.402 6.084,-7.51 11.123,-7.51c3.059,0 5.842,1.154 7.961,3.039l5.657,-5.657c-3.572,-3.329 -8.35,-5.382 -13.618,-5.382c-7.682,0 -14.344,4.337 -17.694,10.691z" fill="#ff3d00"></path><path d="M24,44c5.166,0 9.86,-1.977 13.409,-5.192l-6.19,-5.238c-2.008,1.521 -4.504,2.43 -7.219,2.43c-5.202,0 -9.619,-3.317 -11.283,-7.946l-6.522,5.025c3.31,6.477 10.032,10.921 17.805,10.921z" fill="#4caf50"></path><path d="M43.611,20.083h-1.611v-0.083h-18v8h11.303c-0.792,2.237 -2.231,4.166 -4.087,5.571c0.001,-0.001 0.002,-0.001 0.003,-0.002l6.19,5.238c-0.438,0.398 6.591,-4.807 6.591,-14.807c0,-1.341 -0.138,-2.65 -0.389,-3.917z" fill="#1976d2"></path></g></g></svg>`;
   const phoneSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="42" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="7b136a76da"><path d="M 80 75.382812 L 306.882812 75.382812 L 306.882812 299 L 80 299 Z M 80 75.382812 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#7b136a76da)"><path fill="#008c71" d="M 104.773438 77.828125 C 104.773438 77.828125 68.34375 118.424375 84.535156 153.539062 C 99.640625 186.238281 145.289062 262.132812 221.929688 293.191406 C 233.117188 297.730469 245.390625 299.515625 257.273438 297.355469 C 266.171875 295.738281 290.746094 290.390625 298.824219 280.761719 C 299.671875 279.746094 301.265625 278.558594 302.867188 276.109375 C 304.277344 273.949219 306.871094 271.105469 305.894531 266.257812 C 304.582031 259.738281 276.980469 234.292969 266.3125 224.667969 C 263.171875 221.839844 259.144531 220.125 254.929688 220.125 C 252.183594 220.125 249.6875 220.75 242.667969 222.5625 C 241.21875 235.785156 233.367188 244.535156 226.714244 242.019531 C 217.996094 252.589844 163.742188 214.929688 141.84375 170.761719 C 138.457031 163.933594 139.90625 155.699219 145.414062 150.433594 C 152.292969 143.871094 163.394531 132.765625 163.714244 130.507812 C 164.257812 126.730469 162.808594 124.390625 160.660156 119.542969 C 158.957031 115.722656 134.175781 91.453125 123.699219 81.308594 C 119.90625 77.632812 114.816406 75.457031 109.527344 75.640625 C 107.785156 75.707031 105.46875 76.992188 104.773438 77.828125 Z M 104.773438 77.828125 " fill-opacity="1" fill-rule="nonzero"/></g></svg>`;
   const nameSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="42" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="c520f370a6"><path d="M 90.113281 61.839844 L 285.113281 61.839844 L 285.113281 313.089844 L 90.113281 313.089844 Z M 90.113281 61.839844 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#c520f370a6)"><path fill="#2aa9cb" d="M 285.113281 294.078125 C 285.113281 227.054688 241.425781 172.753906 187.613281 172.753906 C 133.800781 172.753906 90.113281 227.054688 90.113281 294.078125 C 90.113281 304.53125 133.800781 313.050781 187.613281 313.050781 C 241.425781 313.050781 285.113281 304.53125 285.113281 294.078125 Z M 187.613281 61.878906 C 216.964244 61.878906 240.742188 85.621094 240.742188 114.929688 C 240.742188 144.238281 216.964244 167.980469 187.613281 167.980469 C 158.261719 167.980469 134.424375 144.238281 134.424375 114.929688 C 134.424375 85.621094 158.261719 61.878906 187.613281 61.878906 Z M 187.613281 61.878906 " fill-opacity="1" fill-rule="evenodd"/></g></svg>`;
   const adressSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="42" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="8a6525da75"><path d="M 81 103 L 294 103 L 294 279.765625 L 81 279.765625 Z M 81 103 " clip-rule="nonzero"/></clipPath><clipPath id="bcb25067f6"><path d="M 224 95.265625 L 251 95.265625 L 251 135 L 224 135 Z M 224 95.265625 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#8a6525da75)"><path fill="#4a9bf0" d="M 190.777344 104.222656 C 188.769531 102.898438 186.164062 102.898438 184.15625 104.222656 L 81.925781 171.890625 L 88.546875 181.898438 L 103.664062 171.894531 L 103.664062 273.984375 C 103.664062 277.296875 106.355469 279.996094 109.671875 279.996094 L 160.449219 279.996094 C 163.757812 279.996094 166.445312 277.304688 166.445312 273.984375 L 166.445312 201.511719 L 208.5 201.511719 L 208.5 273.984375 C 208.5 277.296875 211.1875 279.996094 214.507812 279.996094 L 265.285156 279.996094 C 268.59375 279.996094 271.28125 277.304688 271.28125 273.984375 L 271.28125 171.894531 L 286.402344 181.898438 L 293.019531 171.890625 Z M 190.777344 104.222656 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#bcb25067f6)"><path fill="#2d3e50" d="M 250.460938 95.265625 L 224.503906 95.265625 L 224.503906 117.738281 L 250.460938 134.921875 Z M 250.460938 95.265625 " fill-opacity="1" fill-rule="nonzero"/></g></svg>`;
@@ -35,12 +35,27 @@
           //import css
          const link = document.createElement('link');
           link.rel = 'stylesheet';
-          link.href = 'https://shadir69.github.io/modal/style.css?11222';//css url
+          link.href = 'https://shadir69.github.io/modal/style.css?1';//css url
           document.head.appendChild(link);
            //end import css
           let table = document.querySelector("#myTable tbody")         
           let modal = document.createElement("div");
           modal.setAttribute("class", "risk_container");
+         let closeButton = document.createElement("span");
+         closeButton.setAttribute("class", "close");
+         closeButton.style.position = "absolute";
+         closeButton.style.top = "10px";
+         closeButton.style.right = "10px";
+         closeButton.style.fontSize = "1.40625rem";
+         closeButton.style.color = "#fff";
+         closeButton.onclick = function () {
+             modal.classList.remove("show");
+         };
+         modal.onclick = function (event) {
+             if (event.target === modal) {
+                 modal.classList.remove("show");
+             }
+         }
 
           let checkUser;
           if (window.location.href.includes("/validation/orders")) {
@@ -78,12 +93,15 @@
                   button.innerHTML = "Check";                 
                   buttonContainer.appendChild(button);
                   td.appendChild(buttonContainer);
-                  // const token =localStorage.getItem("access_token");
+                   const token =localStorage.getItem("access_token") ;
                   let data = [];
                   button.addEventListener("click", async function () {
                       try{
                           data = [];
                           showSpinner(buttonContainer);
+
+                          if(token){
+
                           let view = document.createElement("div");
                           view.setAttribute("class", "risk_view");
                           let buttonMore = document.createElement("button");
@@ -156,18 +174,11 @@
                                  <span class="risk_progress-bar-text">${percentage}%</span> </div> </div> </div> </div> `;
 
                                  document.body.append(modal);
-                                  const closeButton = document.createElement("span");
-                                  closeButton.setAttribute("class", "close");
-                                  closeButton.style.position = "absolute";
-                                  closeButton.style.top = "10px";
-                                  closeButton.style.right = "10px";
-                                  closeButton.style.fontSize = "1.40625rem";
-                                  closeButton.style.color = "#fff";
 
-                                  closeButton.onclick = function () {
-                                      modal.classList.remove("show");
-                                  };
+
                                   let content = document.querySelector('.risk_content');
+                                  content.appendChild(closeButton);
+                                 
                                    const progressBarFill = document.querySelector('.risk_progress-bar-fill');
                                   if (percentage < 25) {
                                       progressBarFill.style.backgroundColor = '#4bdb2f';
@@ -178,12 +189,7 @@
                                   } else {
                                       progressBarFill.style.backgroundColor = '#db4c2f';
                                   }
-                                  content.appendChild(closeButton);
-                                  modal.onclick = function (event) {
-                                      if (event.target === modal) {
-                                           modal.classList.remove("show");
-                                      }
-                                  }
+                                
                               })
                               view.appendChild(buttonMore);
 
@@ -201,7 +207,30 @@
 
                               view.appendChild(deliveredOrdersSpan);
                               view.appendChild(cancelledOrdersSpan);  
-                          } 
+                          }
+                          }else{
+                            closeSpinner();
+                              modal.classList.add("show");
+                              modal.innerHTML =`   <div class="risk_content"> <div class="risk_wrapper">
+                                            <div class="risk_logo"><img src="https://file.riskblacklist.com/imgs/RiskBlackList.gif"  alt=""></div>
+                                            <button class="risk_btn_go"> <div>${googleSvg}</div><p>Sign In With Google</p></button>
+                                           <form action="">
+                                            <input class="risk_text" type="text" placeholder="Email">
+                                          <input class="risk_text" type="password" name="" id="" placeholder="Password">
+                                          <a href="#">Forget Password ?</a>
+                                          <div class="risk_btns_container" >
+                                           <button class="risk_btn_cancel risk_btns">Cancel</button>
+                                             <input class="risk_btn_sign risk_btns" type="submit" value="Sign In"></div>
+                                            <div class="risk_link"><span>don't have an account? <a href="#">SIGN UP NOW</a></span> </div>
+                                                </form> </div> </div> `;
+                              document.body.append(modal);
+                              let content = document.querySelector('.risk_content');
+                              content.appendChild(closeButton);
+
+                          }
+
+
+
                       }catch (error) {
                           console.error(error);
                       }   
@@ -224,7 +253,7 @@
       }  
   });           
  
-  
+  /*
   //GENERATING DATA 
 let URL_SEND='https://rlist.mantoudjbladi.com/api/orders'
 if (!indexedDB) {
@@ -470,6 +499,6 @@ if (!indexedDB) {
   }
   }
   
-
+*/
 
 })();
