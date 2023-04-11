@@ -86,14 +86,14 @@ const googleSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www
                   let phoneNumbers = text.match(regex); 
                   let button = document.createElement("button");
                   let buttonContainer = document.createElement("div");
-                
+                if(phoneNumbers){
                   buttonContainer.setAttribute("class", "risk_button_container");
                   button.setAttribute("id", "button-check");
                   button.setAttribute("class", "risk_button");                  
                   button.innerHTML = "Check";                 
                   buttonContainer.appendChild(button);
                   td.appendChild(buttonContainer);
-                   const token =localStorage.getItem("access_token") ;
+                   const token =localStorage.getItem("access_token")||1 ;
                   let data = [];
                   button.addEventListener("click", async function () {
                       try{
@@ -107,7 +107,7 @@ const googleSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www
                           let buttonMore = document.createElement("button");
                           buttonMore.setAttribute("class", "risk_button");
                           buttonMore.innerHTML = "more details";
-                         
+                      
                         for (let i = 0; i < phoneNumbers.length; i++) {
                               const response = await fetch("https://rlist.mantoudjbladi.com/api/orders/"+phoneNumbers[i], {
                                   headers: {
@@ -235,8 +235,9 @@ const googleSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www
                           console.error(error);
                       }   
                   })  
+                }
               }
-          }}
+              }
           const observer = new MutationObserver((mutationsList) => {
               createButton();
           });
@@ -249,9 +250,12 @@ const googleSvg=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www
           }
            function closeSpinner() {
               spinner.remove();
-          } 
+          }
+          }
       }  
   });           
+ 
+  
   //GENERATING DATA 
 let URL_SEND='https://rlist.mantoudjbladi.com/api/orders'
 if (!indexedDB) {
